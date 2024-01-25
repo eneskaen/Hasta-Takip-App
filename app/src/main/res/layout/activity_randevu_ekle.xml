@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        tools:context=".RandevuEkleActivity">
+
+        <TextView
+            android:id="@+id/textViewTitleRandevu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="93dp"
+            android:fontFamily="serif-bold"
+            android:text="Randevu Ekle"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="27sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextYer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextYer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="167dp"
+            android:hint="Hastane"
+            android:maxLines="1"
+            app:layout_constraintBottom_toTopOf="@+id/buttonRandevuSaati"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextPoliklinik"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Poliklinik"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextYer" />
+
+
+        <Button
+            android:id="@+id/buttonRandevuTarihi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="14dp"
+            android:maxLines="1"
+            android:text="Randevu Tarihi Seç"
+            app:layout_constraintBottom_toTopOf="@+id/buttonRandevuSaati"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/buttonRandevuSaati"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:maxLines="1"
+            android:text="Randevu Saati Seç"
+            app:layout_constraintTop_toTopOf="@id/buttonRandevuTarihi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/butonRandevuEkle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:text="Veritabanına Ekle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRandevuSaati" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
